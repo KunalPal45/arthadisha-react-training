@@ -1,25 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+
 function App() {
+  const today = new Date().toLocaleDateString("en-IN");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        textAlign: "center",
+        backgroundColor: "#e0f2fe",
+        minHeight: "100vh",
+        padding: "40px",
+      }}
+    >
+      <h1>Kunal</h1>
+
+      <h2>Today's Date: {today}</h2>
+
+      <p>
+        Work so hard you don't have time to think about what people say about you
+      </p>
+
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Placeholder"
+        width="150"
+        height="150"
+      />
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
